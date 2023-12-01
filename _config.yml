@@ -1,9 +1,6 @@
-theme: jekyll-theme-minimal
-
+theme: jekyll-theme-canyan
 title: Liyu Cao(曹力予)
-
 page-navigation: true
-
 navbar:
   left:
     - file: index.md
