@@ -1,10 +1,1 @@
-output:
-  html
-
-format:
-  html:
-    theme: jekyll-theme-cayman
-    css: styles.css
-    toc: true
-    code-copy: true
-    code-block-background: true
+theme: jekyll-theme-cayman
