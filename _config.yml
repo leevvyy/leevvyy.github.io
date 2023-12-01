@@ -1,10 +1,103 @@
+project:
+  type: website
+
+website:
+  title: "Statistics 243 Fall 2023"
+  page-navigation: true
+  navbar:
+    left:
+      - file: index.qmd
+        text: Home
+      - file: syllabus.md
+        text: Syllabus
+      - file: office_hours.md
+        text: "Office hours"
+      - file: schedule.md
+        text: Schedule
+      - sidebar:units
+      - sidebar:labs
+      - sidebar:howtos
+      - href: https://edstem.org/us/courses/42474/discussion/
+        text: "Discussion"
+      - href: https://statistics.berkeley.edu/computing/training/tutorials
+        text: Tutorials
+    right:
+      - icon: github
+        href: https://github.com/berkeley-stat243/stat243-fall-2023
+        aria-label: GitHub
+
+  sidebar:
+    - id: units
+      title: "Units"
+      contents:
+        - file: units/unit1-intro.md
+          text: "Unit 1 (UNIX intro)"
+        - file: units/unit2-dataTech.qmd
+          text: "Unit 2 (Data technologies)"
+        - file: units/unit3-bash.qmd
+          text: "Unit 3 (Bash shell)"
+        - file: units/unit4-goodPractices.qmd
+          text: "Unit 4 (Good practices)"
+        - file: units/unit5-programming.qmd
+          text: "Unit 5 (Programming)"
+        - file: units/unit6-parallel.qmd
+          text: "Unit 6 (Parallelization)"
+        - file: units/unit7-bigData.qmd
+          text: "Unit 7 (Databases)"
+        - file: units/unit8-numbers.qmd
+          text: "Unit 8 (Precision)"
+        - file: units/unit9-sim.qmd
+          text: "Unit 9 (Simulation)"
+        - file: units/unit10-linalg.qmd
+          text: "Unit 10 (Linear Algebra)"
+        - file: units/unit11-optim.qmd
+          text: "Unit 11 (Optimization)"
+        - file: units/unit12-graphics.qmd
+          text: "Unit 12 (Graphics)"
+    - id: labs
+      title: "Labs"
+      contents:
+        - file: labs/lab0-setup.md
+          text: "Lab 0: Setup"
+        - file: labs/lab1-submission.md
+          text: "Lab 1: Problem set submission"
+        - file: labs/lab2-testing.md
+          text: "Lab 2: Assertions, Exceptions, and Testing"
+        - file: labs/lab3-debugging.qmd
+          text: "Lab 3: Debugging"
+        - file: labs/lab5-codereview.md
+          text: "Lab 5: Code Reviews"
+        - file: labs/06/scf.qmd
+          text: "Lab 6: SCF and Parallel Computing"
+        - file: labs/py_vs_R.qmd
+          text: "Lab 7: R vs. Python"
+        - file: labs/09/collab_with_git.md
+          text: "Lab 9: Collaboration with Git"
+    - id: howtos
+      title: "How tos"
+      contents:
+        - file: howtos/accessingPython.md
+          text: Accessing Python
+        - file: howtos/accessingUnixCommandLine.md
+          text: Accessing the Unix Command Line
+        - file: howtos/gitInstall.md
+          text: Installing Git
+        - file: howtos/quartoInstall.md
+          text: Installing Quarto
+        - file: howtos/ps-submission.md
+          text: Problem Set Submissions
+        - text: "---"
+        - section: "Windows"
+          contents:
+            - file: howtos/windowsAndLinux.md
+              text: Installing the Linux Subsystem on Windows
+
 output:
   html
 
 format:
   html:
-    theme: jekyll-theme-cayman
-    css: styles.css
+    theme: cayman
     toc: true
     code-copy: true
     code-block-background: true
